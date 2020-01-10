@@ -523,6 +523,7 @@
 #mapmove 18
 #ap 14
 #snake
+#pooramphibian
 #poisonres 10
 #weapon 903
 #neednoteat
@@ -835,10 +836,11 @@
 
 #newmonster 5026
 #name "Young Copper Fish"
-#copyspr 2857
+#spr1 "JungleImages/Underwater/Tiny_Copper_Fish_1.tga"
+#spr2 "JungleImages/Underwater/Tiny_Copper_Fish_2.tga"
 #descr "Small copper fish are gathered by the guardians of the deep and trained into mighty warriors"
-#rcost 3
-#gcost 6
+#rcost 2
+#gcost 4
 #rpcost 8
 #hp 4
 #str 3
@@ -865,11 +867,12 @@
 
 #newmonster 5027
 #name "Copper Fish"
-#copyspr 2858
+#spr1 "JungleImages/Underwater/Medium_Corroded_Fish_1.tga"
+--#spr2 "JungleImages/Underwater/Medium_Copper_Fish_2.tga"
 #descr "Medium fish"
-#gcost 12
+#gcost 8
 #rcost 5
-#rpcost 10
+#rpcost 8
 #hp 12
 #str 7
 #att 10
@@ -917,13 +920,14 @@
 #noheal
 #shockres 10
 #aquatic
-#xpshape 60
+#xpshape 50
 #end
 
 #newmonster 5029
 #name "Giant Copper Fish"
 #descr "At this size the layer of rusted copper is so thick, it becomes almost impossible to land a hit on any vital portion of the fish."
-#copyspr 2858
+#spr1 "JungleImages/Underwater/Full_Corroded_Fish_1.tga"
+--#spr2 "JungleImages/Underwater/Giant_Copper_Fish_2.tga"
 #gcost 30
 #hp 60
 #str 14
