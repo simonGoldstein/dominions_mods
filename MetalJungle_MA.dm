@@ -4,6 +4,7 @@
 #domversion 5.38
 --Need to give shadows for most of the ants
 --steel (commander ant) needs an attack position
+--blade grass attack is wrong
 --
 
 #newweapon 900
@@ -44,7 +45,7 @@
 #len 0
 #bonus
 #pierce
-#secondaryeffect 54
+#secondaryalways 54
 #end
 
 #newweapon 904
@@ -58,6 +59,30 @@
 #halfstr
 #bonus
 #secondaryeffectalways 542
+#end
+
+#newweapon 905
+#name "Tiny Copper Bite"
+#dmg -2
+#len 0
+#bonus
+#slash
+#end
+
+#newweapon 906
+#name "Copper Bite"
+#dmg 1
+#len 0
+#bonus
+#slash
+#end
+
+#newweapon 907
+#name "Obsidian Tentacle"
+#dmg -3
+#bonus
+#slash
+#blunt
 #end
 
 #newweapon 910
@@ -146,12 +171,12 @@
 #rcost 18
 #gcost 15
 #rpcost 12
-#hp 26
+#hp 23
 #str 12
 #att 11
 #def 12
 #prec 10
-#prot 15
+#prot 14
 #size 2
 #mr 10
 #mor 12
@@ -237,12 +262,12 @@
 #rcost 30
 #gcost 10050
 #rpcost 20
-#hp 60
+#hp 50
 #str 20
 #att 13
 #def 8
 #prec 11
-#prot 18
+#prot 16
 #size 4
 #mr 8
 #mor 11
@@ -409,7 +434,7 @@
 #name "Caster Iron Ant"
 #spr1 "JungleImages/Caster_Ant_Blue_1.tga"
 #spr2 "JungleImages/Caster_Ant_Blue_2.tga"
-#descr "A Caster Iron Ant is just bearly physically weaker than their physically inclined brethren. The gem implanted in their skull allows them to cast without the need for the jestures that plauge other casters. Most caster ants are skilled in water and earth, although some learn other skills."
+#descr "A Caster Iron Ant is just bearly physically weaker than their physically inclined brethren. The gem implanted in their skull allows them to cast without the need for the jestures that plauge other casters. Iron caster ants are practiced in earth and astral magic. A rare few are able to develop the casting abilities of other creatures in the iron jungle."
 #rcost 22
 #gcost 10030
 #rpcost 2
@@ -427,13 +452,13 @@
 #ap 12
 #eyes 2
 #quadruped
+#itemslots 12416 --head, 2 misc
 #animal
 #weapon 900
 #neednoteat
-#magicskill 2 1
-#magicskill 3 1
-#custommagic 1792 100
-#custommagic 3968 10
+#magicskill 3 2
+#magicskill 4 1
+#custommagic 896 10 --water, air, fire
 #magicboost 7 -5
 #okleader
 #okmagicleader
@@ -448,12 +473,12 @@
 #rcost 20
 #gcost 10050
 #rpcost 2
-#hp 35
+#hp 25
 #str 10
 #att 13
 #def 14
 #prec 10
-#prot 18
+#prot 14
 #size 5
 #mr 10
 #mor 12
@@ -503,7 +528,7 @@
 #neednoteat
 #poorleader
 #holy
-#itemslots 28674
+#itemslots 28672 --3 misc slots
 #magicskill 8 1
 #autohealer 2
 #end
@@ -537,8 +562,6 @@
 #weapon 900 --iron bite
 #weapon 904
 #okayleader
-#magicskill 2 1
-#magicboost 7 -5
 #end
 
 #newmonster 5017
@@ -546,7 +569,7 @@
 #descr "They either have zero or 2 air"
 #copyspr 1380
 #rcost 20
-#gcost 75
+#gcost 10040
 #rpcost 2
 #hp 35
 #str 12
@@ -561,6 +584,7 @@
 #mapmove 26
 #ap 8
 #bird
+#itemslots 13312 --body, 2 misc
 #neednoteat
 #animal
 #hoheal
@@ -568,8 +592,8 @@
 #weapon 753
 #weapon 408
 #weapon 900
-#custommagic 256 50
-#magicboost 1 1
+#magicskill 1 2
+#magicskill 3 1
 #magicboost 7 -5
 #okleader
 #end
@@ -596,10 +620,11 @@
 #ap 12
 #eyes 2
 #quadruped
+#itemslots 12416
 #animal
 #weapon 900
 #neednoteat
-#magicskill 2 2
+#magicskill 4 2
 #magicskill 3 3
 #custommagic 1792 100
 #custommagic 3968 10
@@ -607,6 +632,8 @@
 #okleader
 #okmagicleader
 #noheal
+#startage 44
+#maxage 85
 #end
 
 #newmonster 5020
@@ -743,13 +770,14 @@
 #prec 4
 #prot 13
 #size 4
-#mr 9
+#mr 11
 #mor 11
 #enc 0
 #mapmove 20
 #ap 12
 #eyes 2
 #quadruped
+#itemslots 12416
 #animal
 #weapon 902
 #weapon 355
@@ -765,6 +793,158 @@
 #startage 44
 #maxage 65
 #end
+
+#newmonster 5025
+#name "Obsidian Kraken"
+#copyspr 438
+#descr "Underwater mage"
+#rcost 10
+#gcost 10030
+#rpcost 2
+#hp 28
+#str 16
+#att 10
+#def 9
+#prec 11
+#prot 12
+#size 4
+#mr 11
+#mor 12
+#enc 0
+#mapmove 20
+#ap 12
+#aquatic
+#eyes 2
+#miscshape
+#itemslots 12294
+#weapon 907
+#weapon 907
+#weapon 907
+#weapon 907
+#animal
+#neednoteat
+#noheal
+#bluntres
+#darkvision 100
+#okleader
+#poormagicleader
+#magicskill 2 2
+#magicskill 3 1
+#magicboost 7 -5
+#end
+
+#newmonster 5026
+#name "Young Copper Fish"
+#copyspr 2857
+#descr "Small copper fish are gathered by the guardians of the deep and trained into mighty warriors"
+#rcost 3
+#gcost 6
+#rpcost 8
+#hp 4
+#str 3
+#att 9
+#def 10
+#prec 5
+#prot 7
+#size 1
+#mr 8
+#mor 11
+#enc 0
+#mapmove 20
+#ap 14
+#snake
+#animal
+#weapon 905
+#neednoteat
+#undisciplined
+#noheal
+#shockres 3
+#aquatic
+#xpshape 6
+#end
+
+#newmonster 5027
+#name "Copper Fish"
+#copyspr 2858
+#descr "Medium fish"
+#gcost 12
+#rcost 5
+#rpcost 10
+#hp 12
+#str 7
+#att 10
+#def 11
+#prec 5
+#prot 9
+#size 2
+#mr 8
+#mor 11
+#enc 0
+#mapmove 20
+#ap 14
+#snake
+#animal
+#weapon 906
+#neednoteat
+#noheal
+#shockres 5
+#aquatic
+#xpshape 25
+#end
+
+#newmonster 5028
+#name "Large Copper Fish"
+#copyspr 2858
+#descr "Large Fish"
+#gcost 20
+#hp 30
+#str 12
+#att 11
+#def 12
+#prec 5
+#prot 12
+#size 3
+#mr 8
+#mor 11
+#enc 0
+#mapmove 20
+#ap 12
+#enc 0
+#snake
+#animal
+#weapon 906
+#neednoteat
+#noheal
+#shockres 10
+#aquatic
+#xpshape 60
+#end
+
+#newmonster 5029
+#name "Giant Copper Fish"
+#descr "At this size the layer of rusted copper is so thick, it becomes almost impossible to land a hit on any vital portion of the fish."
+#copyspr 2858
+#gcost 30
+#hp 60
+#str 14
+#att 11
+#def 11
+#prec 5
+#prot 15
+#size 4
+#mr 9
+#mor 12
+#enc 0
+#mapmove 20
+#ap 12
+#snake
+#animal
+#weapon 906
+#neednoteat
+#shockres 15
+#aquatic
+#end
+
 
 #newmonster 5030
 #name "Myrmecoleon"
@@ -839,6 +1019,25 @@
 #end
 
 #newspell
+#name "Mending"
+#descr "With a single word the wounds of a creature are mended"
+#school 4
+#researchlevel 4
+#path 0 8
+#pathlevel 0 1
+#fatiguecost 20
+#effect 13
+#damage 10020
+#range 5
+#precision 2
+#aoe 1
+#restricted 135
+#casttime 75
+#explspr 10004
+#flightspr -1
+#end
+
+#newspell
 #name "Divine Repair"
 #school 4
 #researchlevel 5
@@ -851,7 +1050,7 @@
 #precision 2
 #aoe 1005
 #restricted 135
-#casttime 100
+#casttime 200
 #explspr 10004
 #flightspr -1
 #end
@@ -859,7 +1058,7 @@
 #newsite 
 #name "The First Metal Hive"
 #path 3
-#gems 3 3
+#gems 3 2
 #gold 50
 #res 50
 #rarity 5
@@ -867,18 +1066,34 @@
 #end
 
 #newsite
-#name "The Great River"
-#path 2
-#gems 2 2
+#name "The Iron Gateway"
+#path 4
+#gems 4 1
 #rarity 5
-#waterrange 2
+#astralrange 1
 #end
 
 #newsite
 #name "The Burning Hive"
 #path 0
-#gems 0 2
+#gems 0 1
 #rarity 5
+#end
+
+#newsite
+#name "Copper Spawning Pool"
+#path 2
+#gems 2 1
+#rarity 5
+#mon 5026 --tiny fish
+#end
+
+#newsite
+#name "Silver Roost"
+#path 1
+#gems 1 1
+#rarity 5
+#gold 25
 #end
 
 #newitem
@@ -901,13 +1116,13 @@
 #descr "The description"
 #summary "Race: Metal Animals, Metal Ants, Most troops unable to heal
 Military: Heavy Armor, Few Ranged Weapons, Powerful Monsters
-Magic: Earth, Water, some Astral and Air, wasteland Fire, No Nature
+Magic: Earth, Astral, some Air, wasteland Fire, underwater Water, No Nature
 Priests: Weak, National Healing Spells"
 #brief "Fersalt is an aglomiration of a metallic ecosystem. It is armies are mostly composed of Iron Ants. It has very few priest and its troops almost never heal."
 #color 0.5 0.5 0.0
 #secondarycolor 0.2 0.7 0.0
 #startsite "The First Metal Hive"
-#startsite "The Great River"
+#startsite "The Iron Gateway"
 #idealcold 1
 #startcom 5011
 #startscout 5010
@@ -923,7 +1138,6 @@ Priests: Weak, National Healing Spells"
 #addrecunit 5004 --chrome spider (cavelry)
 #addrecunit 5005 --size 4 creature
 #addrecunit 5006 --jaguar
-#addrecunit 5007 --bird
 
 #addreccom 5010 --dragonfly scout
 #addreccom 5011 --default commander
@@ -932,20 +1146,22 @@ Priests: Weak, National Healing Spells"
 #addreccom 5014 --quicksilver assassin
 #addreccom 5015 --priest snake
 #addreccom 5016 --monster caster
-#addreccom 5017 --flying caster
 
 #wasterec 5022 --bronze ant
 #wasterec 5023 --large bronze ant
 #wastecom 5024 --fire caster
 
+#mountainrec 5007 --bird
+#mountaincom 5017 --flying caster
+
 #defcom1 5011 --Invested Iron Ant
-#defcom2 5010 --temp
+#defcom2 5012 --big iron ant
 #defunit1 5000 --Tiny Iron Ant
 #defunit1b 5020 --Blade Grass
 #defunit2 5001 --Soldier Ants
-#defunit2b 5002 --temp
-#defmult1 30
-#defmult1b 20
+#defunit2b 5002 --steel ants
+#defmult1 20
+#defmult1b 15
 
 #homerealm 10
 --remove all nature gods
@@ -978,20 +1194,32 @@ Priests: Weak, National Healing Spells"
 #hero1 5030
 --#hero2 
 
-#earthblessbonus 2
+#earthblessbonus 1
 #fortera 2
 #merccost 100
 #forestlabcost 600
 #foresttemplecost 1000
 #templepic 30
+
 #uwbuild 1
+#uwrec 5026 --size 1 fish
+#uwrec 5027 --size 2 fish
+#uwcom 5025 --obsidian kraken
+#uwdefcom1 5027 --size 2 fish
+#uwdefcom2 5025 --kraken
+#uwdefunit1 5026
+#uwdefmult1 20
+#uwdefunit1b 5027
+#uwdefmult2b 10
+#uwdefunit2 5028
+#uwdefmult2 10
 #end
 
 --wasteland events
 #newevent
 #rarity 0
 #req_unique 1
-#req_nation 135
+#req_fornation 135
 #nation -2
 #req_capital 0
 #req_waste 1
@@ -1001,6 +1229,37 @@ Priests: Weak, National Healing Spells"
 #com 5024
 #1d3units 5023
 #2d6units 5022
+#end
+
+--underwater events
+#newevent
+#rarity 0
+#req_unique 1
+#req_fornation 135
+#nation -2
+#req_capital 0
+#req_land 0
+#req_freesites 1
+#msg "In the deeps of the ocean you have uncoverd the breeding ground of the copper fish. [Copper Spawning Pool]"
+#addsite -1
+#com 5026
+#1d6units 5027
+#2d6units 5026
+#end
+
+--mountain events
+#newevent
+#rarity 0
+#req_unique 1
+#req_fornation 135
+#nation -2
+#req_capital 0
+#req_mountain 1
+#req_freesites 1
+#msg "In the deeps of the ocean you have uncoverd the breeding ground of the copper fish. [Silver Roost]"
+#addsite -1
+#com 5017
+#3d6units 5007
 #end
 
 --Anti-nature gem events
