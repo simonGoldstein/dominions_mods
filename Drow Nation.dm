@@ -258,8 +258,8 @@
 #newmonster 4006
 #name "Drow Crossbowman"
 #descr "The standard Drow troop type for patroling the Underdark."
-#spr1 "drow_img/drow_crossbow_red_1.tga"
-#spr2 "drow_img/drow_crossbow_red_2.tga"
+#spr1 "drow_img/drow_crossbow_black_1.tga"
+#spr2 "drow_img/drow_crossbow_black_2.tga"
 #hp 10
 #size 2
 #prot 0
