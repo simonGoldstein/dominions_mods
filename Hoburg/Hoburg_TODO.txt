@@ -1,0 +1,36 @@
+Todo Hoburg
+
+update moral and make copy troops of basic existing troops
+
+Add heros
+galdalf f4 s2 2firegems/combat-cursed item
+builder money, resources, growth, mason, 5pd/turn
+Headless Hoburg, mega thug
+Good leader, 200+ 2+ inspirational
+Makgraff, really good death mage
+Prize hog, multihero, basically size 5 elephant
+
+Add spells
+high level hoburg spam
+low level ritual hopurg skelle spam
+low level NE spell - summon
+high level NE spell - summon
+
+Add gods
+Makgraff, needs to activate event
+Buisness Tychoon, no magic, 200gp, spawn pigs
+
+Add Events
+New adventurers, fellowship of the ring, possibly specific to ring god
+Makgraff arrival event, replace nature site with death site.
+
+Add units
+Air mage a2
+Good crossbowman
+Good Fromation speer fighter
+Sacred guilded hog riders
+makgraff death mage - special
+undead hoburgs
+big summons, death, big NE, small NE
+
+

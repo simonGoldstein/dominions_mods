@@ -1,16 +1,16 @@
 #modname "Hoburg Nation"
 #description "This mod creates a new nation of hoburgs"
-#icon "Hoburg/Images/hoburg_banner.tga"
+#icon "Hoburg/hoburg_banner.tga"
 #version 0.11
 #domverison 5.39
 
--- New gods [5050-5055)
+-- New gods [5050-5054)
 
 -- The one Ring
 #newmonster 5050
 #name "The One Ring"
 #descr "An ancient ring of forged by a long gone evil power. While the original will lives within the ring it also grants powers to it's followers. The ring is impossible to destroy using mundane methods. After laying dormant for agest past the ring has decided once more to rule the world."
-#spr1 "Hoburg/Images/ring.tga"
+#spr1 "Hoburg/ring.tga"
 #pathcost 30
 #startdom 4
 #gcost 200
@@ -51,8 +51,8 @@
 #newmonster 5051
 #name "Master Horticulturist"
 #descr "The Master Hortoculturist is a plant and herb farmer of great skill. His powers has enabled him to claim a role as a pretender god. The masterful skills enable the horticulturalist to both increase the growth of the province he is in, and to heal his followers."
-#spr1 "Hoburg/Images/great_horticulturalist_1.tga"
-#spr2 "Hoburg/Images/great_horticulturalist_2.tga"
+#spr1 "Hoburg/great_horticulturalist_1.tga"
+#spr2 "Hoburg/great_horticulturalist_2.tga"
 #pathcost 10
 #startdom 1
 #gcost 100
@@ -83,8 +83,8 @@
 #newmonster 5052
 #name "Great Nekromant"
 #descr "The Great Nekromant was once bannished from the Hoburg for practicing the evil arts of neckromancy. With his incredible prowess however he has been able to not just return but to claim the Hoburg as his own dominion. With his newfound power he ascended to a pretender god."
-#spr1 "Hoburg/Images/greater_nekromant_1.tga"
-#spr2 "Hoburg/Images/greater_nekromant_2.tga"
+#spr1 "Hoburg/greater_nekromant_1.tga"
+#spr2 "Hoburg/greater_nekromant_2.tga"
 #pathcost 10
 #startdom 1
 #gcost 80
@@ -108,7 +108,54 @@
 #insane 5
 #end
 
--- Heros [5055 - 5060)
+-- Industry Tycoon
+#newmonster 5053
+#name "Industry Tycoon"
+#descr "This hoburg buisness leader grew so successful he realized that more money couldn't satisfy his greed. He decided to skip over buying military leadership and to just buy godhood. He bribbed his way past the clergy and to the hearts of his many followers. His ruthless buisness tactics would be really useful for conquering the world if he wasn't too fat to get out of his chair. In his freetime he likes to breed pigs for the fair."
+#spr1 "Hoburg/tycoon_1.tga"
+#spr2 "Hoburg/tycoon_2.tga"
+#pathcost 10
+#startdom 2
+#gcost 100
+#hp 20
+#str 3
+#att 5
+#def 5
+#prec 5
+#prot 0
+#size 2
+#mr 18
+#mor 30
+#enc 10
+#mapmove 2
+#ap 6
+#immobile
+#resources 50
+#gold 200
+#mason
+#makemonsters1 5087
+#batstartsum2d6 5087
+#superiorleader
+#fixedresearch 15
+#pathboost 128 -5
+#pathboost 256 -5
+#pathboost 512 -5
+#pathboost 1024 -5
+#pathboost 2048 -5
+#pathboost 8192 -5
+#pathboost 16384 -5
+#pathboost 32768 -5
+#end
+
+#newmonster 5054
+#copyspr 1975
+#copystats 1975
+#gcost 100
+#startdom 2
+#pathcost 10
+#end
+
+-- Heros [5054 - 5060)
 
 
 -- Commanders [5060 - 5075)
@@ -145,8 +192,8 @@
 -- Hogmann -- good knight commander
 #newmonster 5063
 #copystats 1196
-#spr1 "Hoburg/Images/adv_hogknight_1.tga"
-#spr2 "Hoburg/Images/adv_hogknight_2.tga"
+#spr1 "Hoburg/adv_hogknight_1.tga"
+#spr2 "Hoburg/adv_hogknight_2.tga"
 #hp 7
 #name "Hogmann"
 #descr "These wealthy hoburg Burgmann use their wealth to purchase their way into the army command structure. They always ride their prize hog into battle."
@@ -156,8 +203,8 @@
 -- Hogmeister -- great knight commander
 #newmonster 5064
 #copystats 1196
-#spr1 "Hoburg/Images/hogknight_com_1.tga"
-#spr2 "Hoburg/Images/hogknight_com_2.tga"
+#spr1 "Hoburg/hogknight_com_1.tga"
+#spr2 "Hoburg/hogknight_com_2.tga"
 #gcost 10050
 #hp 9
 #name "Hogmeister"
@@ -176,8 +223,8 @@
 #newmonster 5066
 #name "Garden Master"
 #descr "Tending the fortified Hoburg's garden is the Garden Master's job. Through his work and studies he has improved his skills to become a master of magic."
-#spr1 "Hoburg/Images/adv_horticulturalist_1.tga"
-#spr2 "Hoburg/Images/adv_horticulturalist_2.tga"
+#spr1 "Hoburg/adv_horticulturalist_1.tga"
+#spr2 "Hoburg/adv_horticulturalist_2.tga"
 #gcost 10007
 #rpcost 2
 #weapon 153
@@ -204,8 +251,8 @@
 #newmonster 5067
 #name "Chief Horticulturalist"
 #descr "Tending the fortified Hoburg's garden is the Garden Master's job. Through his work and studies he has improved his skills to become a master of magic."
-#spr1 "Hoburg/Images/chief_horticulturalist_1.tga"
-#spr2 "Hoburg/Images/chief_horticulturalist_2.tga"
+#spr1 "Hoburg/chief_horticulturalist_1.tga"
+#spr2 "Hoburg/chief_horticulturalist_2.tga"
 #gcost 10007
 #rpcost 4
 #weapon 153
@@ -233,8 +280,8 @@
 #newmonster 5068
 #name "Nekromant"
 #descr "Nekromants and other members of the Markgraf were banned from the Hoburgs. After leaving and gaining impressive skills the Nekromant has now been recruited to help defend the Hoburg."
-#spr1 "Hoburg/Images/nekromant_1.tga"
-#spr2 "Hoburg/Images/nekromant_2.tga"
+#spr1 "Hoburg/nekromant_1.tga"
+#spr2 "Hoburg/nekromant_2.tga"
 #gcost 10040
 #rpcost 2
 #weapon 9
@@ -261,8 +308,8 @@
 #newmonster 5085
 #copystats 271
 #gcost 15
-#spr1 "Hoburg/Images/giant_smasher_1.tga"
-#spr2 "Hoburg/Images/giant_smasher_2.tga"
+#spr1 "Hoburg/giant_smasher_1.tga"
+#spr2 "Hoburg/giant_smasher_2.tga"
 #clearweapons
 #weapon 1550
 #hp 7
@@ -335,7 +382,11 @@ Priests: Weak, stealthy"
 #homerealm 2
 #cheapgod20 2784
 #cheapgod20 3080
-#addgod 5050 -- Ring
+#addgod 5054 -- temporary
+#addgod 5050 -- The One Ring
+#addgod 5051 -- Great horticulturist n1
+#addgod 5052 -- Great Nekromant d1
+#addgod 5053 -- Industry Tycoon no magic
 #addgod 2791 -- Earth serpent e2
 #addgod 250 -- Frost father w1 a1
 #addgod 2206 -- eldest dwarf e1
@@ -353,8 +404,7 @@ Priests: Weak, stealthy"
 #addgod 251 -- Great sage s1
 #addgod 485 -- Great enchantress s1
 #delgod 270 -- Remove arch druid
-#addgod 5051 -- Great horticulturist n1
-#addgod 5052 -- Great Nekromant d1
+
 
 --buildings
 #fortcost -10
@@ -394,7 +444,9 @@ Priests: Weak, stealthy"
 #path 3
 #gems 3 2
 #rarity 5
-#homemon 5085
+#homemon 5085 -- Giant Smasher
+-- #homemon -- guilded hogknight
+-- #homemon -- Glave Cannons
 #end
 
 #newsite 1551
@@ -403,7 +455,15 @@ Priests: Weak, stealthy"
 #path 6
 #gems 6 3
 #rarity 5
-#homecom 5067
+#homecom 5067 -- great hortoculturalist
 #end
 
-
+#newsite 1552
+#name "Fortified Makgraff"
+#level 0
+#path 5
+#gems 5 3
+#rarity 5
+-- #homecom --
+-- #homecom --
+#end
