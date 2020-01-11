@@ -73,7 +73,7 @@
 #nratt 2
 #att 0
 #range 6
-#ammo 2
+#ammo 1
 #rcost 1
 #sound 15
 #slash
@@ -678,8 +678,8 @@
 #mr 12
 #mor 12
 #str 9
-#att 11
-#def 9
+#att 12
+#def 10
 #prec 11
 #enc 3
 #mapmove 14
