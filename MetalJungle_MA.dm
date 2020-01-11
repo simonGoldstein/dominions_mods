@@ -287,6 +287,7 @@
 --elite troops
 #newmonster 5006
 #name "Stone Jaguar"
+#descr "Elite troops"
 #copyspr 859
 #rcost 10
 #gcost 10025
@@ -315,6 +316,7 @@
 --flying troops (comparable to the iron ants, but more mobile)
 #newmonster 5007
 #name "Silver Hawk"
+#descr "Flying toops"
 #copyspr 513
 #rcost 5
 #gcost 10015
@@ -506,7 +508,7 @@
 #name "Emerald Asp"
 #spr1 "JungleImages/Priest_Snake_1.tga"
 #spr2 "JungleImages/Priest_Snake_2.tga"
-#descr "Except to perhaps the Lizardfolk of C'tis it is strange to give a snake such prowess. Even then to give clerical might to one so small is difficult to understand. However for Fersalt only the tiny green snakes are given priestly authority. While they are a condiut for the blasphemous god that rules behind the mindless beasts, they do not recieve the respect clergy should."
+#descr "Except to perhaps the Lizardfolk of C'tis it is strange to give a snake such prowess. Even then to give clerical might to one so small is difficult to understand. However for Fersalt only the tiny green snakes are given priestly authority. While they are a condiut for the blasphemous god that rules behind the mindless beasts, they do not recieve the respect clergy should. To be able to bring their message to the waves, they have been granted simple waterbreathing, but they still have difficulty swimming."
 #rcost 5
 #gcost 10010
 #rpcost 1
@@ -567,7 +569,7 @@
 
 #newmonster 5017
 #name "Great Silver Hawk"
-#descr "They either have zero or 2 air"
+#descr "Nesting in the only highest peaks these creatures are almost impossible to hunt. On top of formidible prowess in the air, they are also competent spellcasters. Unlike other creatures from the iron jungle, they are resistant to most manipulation of their minds."
 #copyspr 1380
 #rcost 20
 #gcost 10040
@@ -579,7 +581,7 @@
 #prec 13
 #prot 13
 #size 3
-#mr 11
+#mr 13
 #mor 12
 #enc 0
 #mapmove 26
@@ -599,6 +601,7 @@
 #okleader
 #end
 
+--to be removed
 #newmonster 5018
 #name "Grand Caster Iron Ant"
 #spr1 "JungleImages/Caster_Ant_Red_1.tga"
@@ -798,7 +801,7 @@
 #newmonster 5025
 #name "Obsidian Kraken"
 #copyspr 438
-#descr "Underwater mage"
+#descr "Obsidian kraken are the masters of the underwater fields. Their allegience was purchased through an exchange of knowledge and they are not able to learn earth magic to protect their fairly brittle bodies. Unlike their native cousins, they are not stealthy, but they retain their powerful vision."
 #rcost 10
 #gcost 10030
 #rpcost 2
@@ -838,7 +841,7 @@
 #name "Young Copper Fish"
 #spr1 "JungleImages/Underwater/Tiny_Copper_Fish_1.tga"
 #spr2 "JungleImages/Underwater/Tiny_Copper_Fish_2.tga"
-#descr "Small copper fish are gathered by the guardians of the deep and trained into mighty warriors"
+#descr "Strangely compared to the land, there are fewer dangerous creatures in the deeps. This is due to the corrosive nature of water. However, even in this envornment life finds a way. Young copper fish are gathered to be trained, at this time they are bearly stronger than their flesh cousins."
 #rcost 2
 #gcost 4
 #rpcost 8
@@ -869,7 +872,7 @@
 #name "Copper Fish"
 #spr1 "JungleImages/Underwater/Medium_Corroded_Fish_1.tga"
 --#spr2 "JungleImages/Underwater/Medium_Copper_Fish_2.tga"
-#descr "Medium fish"
+#descr "Copper fish resemble other large oceanic fish, although their movements are slower. At this point in their lives a protective layer of corroded copper has envolped their fins, protecting them from breaking. Copper fish are resistant to electrical attacks."
 #gcost 8
 #rcost 5
 #rpcost 8
@@ -898,7 +901,7 @@
 #newmonster 5028
 #name "Large Copper Fish"
 #copyspr 2858
-#descr "Large Fish"
+#descr "Copper fish resemble other large oceanic fish, although their movements are slower. At this point in their lives a protective layer of corroded copper has envolped their fins, protecting them from breaking. Copper fish are resistant to electrical attacks."
 #gcost 20
 #hp 30
 #str 12
@@ -925,7 +928,7 @@
 
 #newmonster 5029
 #name "Giant Copper Fish"
-#descr "At this size the layer of rusted copper is so thick, it becomes almost impossible to land a hit on any vital portion of the fish."
+#descr "Copper fish resemble other large oceanic fish, although their movements are slower. Copper fish are resistant to electrical attacks. At this size the layer of rusted copper is so thick, it becomes almost impossible to land a hit on any vital portion of the fish."
 #spr1 "JungleImages/Underwater/Full_Corroded_Fish_1.tga"
 --#spr2 "JungleImages/Underwater/Giant_Copper_Fish_2.tga"
 #gcost 30
@@ -1117,7 +1120,7 @@
 #name "Fersalt"
 #epithet "The Iron Jungle"
 #era 2
-#descr "The description"
+#descr "At the dawn of time, in the age before ages, the first Pantokrator tinkered with the world. He made mighty monters, powerful magics, and the world itself. In a quest for creation he produced creatures from dust and mud, filled them life and souls. However in secret he produced some creatures from metal and stone. They were ugly and dangerous so they were sealed away. With the Pantokrator gone a god of yore, a loser of the enternal conflic seeking revenge has unsealed these metallic beasts. The jungle produced by metalic trees is strange, might ants roam the contry side, jaguars of stone hunt, and giant spiders prowl the tree tops. Beyond the reaches of the jungle a varitey of creatures practice simple magics. No creatures within Fersalt practice nature magic, and wandering nature mages are hunted and their tools destroyed."
 #summary "Race: Metal Animals, Metal Ants, Most troops unable to heal
 Military: Heavy Armor, Few Ranged Weapons, Powerful Monsters
 Magic: Earth, Astral, some Air, wasteland Fire, underwater Water, No Nature
@@ -1260,7 +1263,7 @@ Priests: Weak, National Healing Spells"
 #req_capital 0
 #req_mountain 1
 #req_freesites 1
-#msg "In the deeps of the ocean you have uncoverd the breeding ground of the copper fish. [Silver Roost]"
+#msg "Here in the highlands a nest for the Silver Hawks. [Silver Roost]"
 #addsite -1
 #com 5017
 #3d6units 5007
