@@ -230,7 +230,7 @@
 #newmonster 4005
 #name "Drow Slaver"
 #descr "The Drow troop entrusted with taking slaves and collecting booty."
-#copyspr 11
+#spr1 "drow_img/drow_raider_1.tga"
 #hp 10
 #size 2
 #prot 0
