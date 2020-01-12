@@ -137,22 +137,7 @@
 #batstartsum2d6 5087
 #superiorleader
 #fixedresearch 15
-#pathboost 128 -5
-#pathboost 256 -5
-#pathboost 512 -5
-#pathboost 1024 -5
-#pathboost 2048 -5
-#pathboost 8192 -5
-#pathboost 16384 -5
-#pathboost 32768 -5
-#end
-
-#newmonster 5054
-#copyspr 1975
-#copystats 1975
-#gcost 100
-#startdom 2
-#pathcost 10
+#magicboost 53 -5
 #end
 
 -- Heros [5054 - 5060)
@@ -371,6 +356,7 @@ Military: Infantry, Crossbows, and hog riders
 Magic: Nature, Earth, some Water, some Death
 Priests: Weak, stealthy"
 
+#flag "Hoburg/hoburg_flag.tga"
 #color 0.4 0.4 0.2
 #secondarycolor 0.4 0.5 0.2
 
@@ -382,7 +368,6 @@ Priests: Weak, stealthy"
 #homerealm 2
 #cheapgod20 2784
 #cheapgod20 3080
-#addgod 5054 -- temporary
 #addgod 5050 -- The One Ring
 #addgod 5051 -- Great horticulturist n1
 #addgod 5052 -- Great Nekromant d1
