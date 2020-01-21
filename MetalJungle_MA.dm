@@ -465,6 +465,8 @@
 #okleader
 #okmagicleader
 #noheal
+#startage 44
+#maxage 80
 #end
 
 #newmonster 5014
@@ -599,6 +601,8 @@
 #magicskill 3 1
 #magicboost 7 -5
 #okleader
+#startage 44
+#maxage 80
 #end
 
 --to be removed
@@ -795,7 +799,7 @@
 #magicskill 3 1
 #magicboost 7 -5
 #startage 44
-#maxage 65
+#maxage 80
 #end
 
 #newmonster 5025
@@ -892,7 +896,6 @@
 #animal
 #weapon 906
 #neednoteat
-#noheal
 #shockres 5
 #aquatic
 #xpshape 25
@@ -920,7 +923,6 @@
 #animal
 #weapon 906
 #neednoteat
-#noheal
 #shockres 10
 #aquatic
 #xpshape 50
@@ -1249,7 +1251,7 @@ Priests: Weak, National Healing Spells"
 #req_freesites 1
 #msg "In the deeps of the ocean you have uncoverd the breeding ground of the copper fish. [Copper Spawning Pool]"
 #addsite -1
-#com 5026
+#com 5025
 #1d6units 5027
 #2d6units 5026
 #end
