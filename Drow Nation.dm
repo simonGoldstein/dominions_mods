@@ -51,7 +51,7 @@
 #rcost 5
 #magic
 #dt_cap
-#secondaryeffect 53
+#secondaryeffect 51
 #unrepel
 #flail
 #end
@@ -79,6 +79,7 @@
 #slash
 #magic
 #nostr
+#bonus
 #secondaryeffectalways 137
 #flyspr 111 1
 #end
@@ -110,6 +111,22 @@
 #ironweapon
 #secondaryeffect 51
 #end
+
+#newweapon 957
+#name "Flaming Scourge"
+#dmg 8
+#nratt 2
+#att 2
+#def -2
+#len 4
+#sound 11
+#blunt
+#flail
+#secondaryeffectalways 171
+#unrepel
+#end
+
+
 
 
 
@@ -146,7 +163,7 @@
 
 #newmonster 4002
 #name "Drow Light Infantry"
-#descr "The standard Drow troop type for patroling the Underdark."
+#descr "The standard Drow troop type for setting up ambushes in the Underdark."
 #spr1 "drow_img/leather_armor_drow_1.tga"
 #spr2 "drow_img/light_armor_drow_2.tga"
 #hp 10
@@ -166,6 +183,7 @@
 #armor 10
 #darkvision 50
 #ambidextrous 2
+#stealthy 0
 #gcost 12
 #rcost 1
 #rpcost 10000
@@ -307,9 +325,10 @@
 #poisonres 15
 #berserk 2
 #mountedhumanoid
+#undisciplined
 #gcost 28
 #rcost 1
-#rpcost 40
+#rpcost 10000
 #end
 
 #newmonster 4008
@@ -339,7 +358,7 @@
 #bodyguard 2
 #gcost 25
 #rcost 1
-#rpcost 22
+#rpcost 25
 #end
 
 #newmonster 4009
@@ -368,7 +387,7 @@
 #poisonres 15
 #gcost 65
 #rcost 2
-#rpcost 60
+#rpcost 35
 #end
 
 #newmonster 4010
@@ -402,7 +421,7 @@
 
 #newmonster 4011
 #name "Drow Scout"
-#copyspr 426
+#copyspr 1591
 #descr "Scout"
 #hp 10
 #size 2
@@ -421,7 +440,7 @@
 #darkvision 50
 #ambidextrous 2
 #noleader
-#stealthy 15
+#stealthy 10
 #gcost 10012
 #rcost 1
 #rpcost 10000
@@ -429,7 +448,7 @@
 
 #newmonster 4012
 #name "Drow Captain"
-#descr "The standard Drow troop type for patroling the Underdark."
+#descr "The Drow commander who leads ambushes in the Underdark."
 #spr1 "drow_img/light_gold_cape_drow_1.tga"
 #spr2 "drow_img/light_gold_cape_drow_2.tga"
 #hp 11
@@ -446,9 +465,10 @@
 #ap 14
 #weapon 6 --shortsword
 #weapon 9 --dagger
-#armor 8
+#armor 15
 #darkvision 50
 #ambidextrous 2
+#stealthy 0
 #okleader
 #gcost 10012
 #rcost 1
@@ -457,7 +477,7 @@
 
 #newmonster 4013
 #name "Drow Marshal"
-#descr "The standard Drow troop type for patroling the Underdark."
+#descr "The standard Drow commander who commands the heavy drow infantry."
 #spr1 "drow_img/heavy_gold_cape_drow_1.tga"
 #spr2 "drow_img/heavy_gold_cape_drow_2.tga"
 #hp 11
@@ -675,19 +695,19 @@
 #hp 10
 #size 2
 #prot 0
-#mr 12
-#mor 12
+#mr 13
+#mor 13
 #str 9
-#att 12
-#def 10
-#prec 11
+#att 13
+#def 11
+#prec 12
 #enc 3
 #mapmove 14
 #ap 14
 #stealthy 20
 #assassin
 #patience 3
-#darkvision 100
+#darkvision 50
 #ambidextrous 2
 #noleader
 #weapon 956
@@ -702,7 +722,7 @@
 #newmonster 4021
 #name "Raid Leader"
 #descr "Leads raids in the Overworld for slaves and plunder"
-#copyspr 1164
+#spr1 "drow_img/drow_raid_leader_1.tga"
 #hp 10
 #size 2
 #prot 0
@@ -717,11 +737,12 @@
 #ap 14
 #weapon 6
 #weapon 9
-#armor 10
+#armor 8
 #okleader
 #darkvision 50
 #ambidextrous 2
-#pillagebonus 1 
+#pillagebonus 5
+#taxcollector 
 #gcost 10010
 #rcost 1
 #rpcost 10010
@@ -731,14 +752,14 @@
 #name "Myrlochar"
 #descr "The Myrlochar is a huge demon spider summoned from the Abyss to terrorize the enemies of Lolth."
 #copyspr 468
-#hp 40
+#hp 45
 #size 4
-#prot 12
+#prot 15
 #mr 18
 #mor 30
 #str 16
 #att 13
-#def 10
+#def 15
 #prec 12
 #enc 2
 #mapmove 24
@@ -747,6 +768,7 @@
 #holy
 #poisonres 25
 #banefireshield 8
+#speciallook 2
 #darkvision 100
 #weapon 251
 #weapon 224
@@ -772,6 +794,8 @@
 #mapmove 16
 #ap 16
 #stealthy 0
+#magicskill 5 1
+#magicskill 6 1
 #weapon 6
 #weapon 17
 #armor 14
@@ -868,7 +892,8 @@
 #demon
 #flying
 #assassin
-#patience 2
+#stealthy 20
+#patience 3
 #scalewalls
 #darkpower 2
 #neednoteat
@@ -881,7 +906,8 @@
 #newmonster 4028
 #name "Carrion Crawler"
 #descr "An avid scavenger of the Underdark"
-#copyspr 2526
+#spr1 "drow_img/carrion_crawler_1.tga"
+#spr2 "drow_img/carrion_crawler_2.tga"
 #hp 35
 #size 3
 #prot 6
@@ -896,13 +922,107 @@
 #ap 16
 #darkvision 100
 #magicbeing
+#animal
 #weapon 955
 #weapon 20
 #noleader
 #end
 
+#newmonster 4029
+#name "Drow Shield Breakers"
+#descr "The Drow troop developed for fighting the more heavily armed human troops of the Overworld, especially those with shields."
+#spr1 "drow_img/drow_shieldbreaker_1.tga"
+#hp 10
+#size 2
+#prot 0
+#mr 12
+#mor 11
+#str 9
+#att 11
+#def 10
+#prec 10
+#enc 3
+#mapmove 14
+#ap 14
+#weapon 15
+#weapon 953
+#armor 13
+#armor 20
+#darkvision 50
+#ambidextrous 2
+#gcost 12
+#rcost 1
+#rpcost 10000
+#end
 
+#newmonster 4030
+#name "Apocalypse Demon"
+#descr "A terrifying manifestation of Lolth's wrath meant to bring total destruction to the Overworld."
+#copyspr 120
+#hp 200
+#size 6
+#prot 20
+#mr 20
+#mor 30
+#str 18
+#att 17
+#def 15
+#mapmove 100
+#ap 24
+#enc 0
+#ambidextrous 8
+#demon
+#holy
+#unique
+#onebattlespell "Darkness"
+#trample
+#teleport
+#fear 2
+#fireres 18
+#fireshield 8
+#speciallook 1
+#batstartsum2d6 304
+#noleader
+#popkill 5
+#maxage 2000
+#magicskill 8 3
+#magicskill 5 4
+#magicskill 0 4
+#weapon 957
+#weapon 146
+#end  
 
+#newmonster 4031
+#fixedname "Vorn"
+#name "the Drider commander"
+#descr "Normally the transformation to being a drider destroys a portion of the victim's mind. Vorn was a powerful mage when he failed the test and has managed to retain more of his abilities than most."
+#spr1 "drow_img/heavy_drider_1.tga"
+#spr2 "drow_img/heavy_drider_2.tga"
+#hp 20
+#size 3
+#prot 3
+#mr 9
+#mor 12
+#str 12
+#att 11
+#def 13
+#prec 10
+#enc 3
+#mapmove 20
+#ap 20
+#weapon 8
+#weapon 65
+#armor 8
+#darkvision 100
+#ambidextrous 2
+#poisonres 15
+#berserk 2
+#mountedhumanoid
+#okleader
+#magicskill 5 1
+#magicskill 0 1
+#insane 5
+#end
 
 #newspell
 #copyspell 538
@@ -919,7 +1039,7 @@
 
 #newspell
 #name "Summon Myrlochar"
-#descr "The caster summons a Myrlochar to wreak havoc on the prime material plane."
+#descr "The caster summons Myrlochars to wreak havoc on the prime material plane."
 #school 6	
 #researchlevel 6
 #path 0 7
@@ -928,8 +1048,8 @@
 #pathlevel 1 3
 #damage 4022
 #effect 10001
-#fatiguecost 3300
-#nreff 1
+#fatiguecost 4000
+#nreff 1002
 #restricted "Drow"
 #end
 
@@ -948,8 +1068,8 @@
 #end
 
 #newspell
-#name "Summon Carrion Crawler"
-#descr "This spell summons a Carrion Crawler to feed upon the dead."
+#name "Summon Carrion Crawlers"
+#descr "This spell summons Carrion Crawlers to feed upon the dead."
 #school 0
 #researchlevel 2
 #path 0 6
@@ -961,6 +1081,22 @@
 #fatiguecost 500
 #nreff 1002
 #onlygeosrc 4096
+#restricted "Drow"
+#end
+
+#newspell
+#name "Summon Apocalypse Demon"
+#descr "This mighty spell summons the Apocalypse Demon to destroy the Overworld."
+#school 6
+#researchlevel 8
+#path 0 7
+#pathlevel 0 6
+#path 1 5
+#pathlevel 1 6
+#damage 4030
+#effect 10021
+#fatiguecost 16600
+#nreff 1
 #restricted "Drow"
 #end 
 
@@ -1001,17 +1137,18 @@ Priests: Powerful"
 #brief "Suck"
 #color 0.5 0.0 1.0
 #secondarycolor 0.1 0.1 0.1
-#idealcold 0
+#idealcold -1
 #cavenation 2
 #addrecunit 4001 --militia
 #addrecunit 4002 --light drow
-#addrecunit 4004 --light drow + crossbow
-#addrecunit 4003 --heavy drow
+#addrecunit 4004 --medium drow + crossbow
+#addrecunit 4003 --sword/axe
+#addrecunit 4029 --morningstar
+#addrecunit 4010 -- standard bearer
 #addrecunit 4005 --slaver
 #addrecunit 4006 --crossbow
 #addrecunit 4007 --drider
 #addrecunit 4008 --snake whip sacred
-#addrecunit 4010 -- standard bearer
 #addreccom 4011 --scout
 #addreccom 4012 --small commander
 #addreccom 4013 --large commander
@@ -1026,9 +1163,22 @@ Priests: Powerful"
 #hero2 4024 -- Sage
 #hero3 4025 -- Illithid
 #hero4 4026 -- Level 4 priest
-#homerealm 1
+#hero5 4031 --drider commander
 #homerealm 2
 #homerealm 10
+#addgod 157
+#addgod 269
+#addgod 2756
+#addgod 1341
+#addgod 1231
+#addgod 138
+#addgod 2793
+#addgod 607
+#addgod 2608
+#addgod 2801
+#delgod 3082
+#delgod 2784
+#delgod 2785
 #fortera 2
 #templepic 0
 #aideathnation
