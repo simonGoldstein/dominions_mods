@@ -423,7 +423,7 @@ Priests: Weak, stealthy"
 #end
 
 -- Magic Sites
-#newsite 1550
+#newsite
 #name "Fortified Hoburg"
 #level 0
 #path 3
@@ -434,7 +434,7 @@ Priests: Weak, stealthy"
 -- #homemon -- Glave Cannons
 #end
 
-#newsite 1551
+#newsite
 #name "Hoburg Gardens"
 #level 0
 #path 6
@@ -443,7 +443,7 @@ Priests: Weak, stealthy"
 #homecom 5067 -- great hortoculturalist
 #end
 
-#newsite 1552
+#newsite
 #name "Fortified Makgraff"
 #level 0
 #path 5
