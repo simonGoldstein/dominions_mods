@@ -17,10 +17,11 @@
 #sound 13
 #range 12
 #ammo 1
-#rcost 3
+#rcost 2
 #pierce
 #armorpiercing
 #bowstr
+#bonus
 #secondaryeffect 53
 #flyspr 109 1
 #end
@@ -413,6 +414,7 @@
 #weapon 8 --broadsword
 #weapon 953 --parying dagger
 #armor 8
+#armor 20
 #gcost 20
 #rcost 1
 #rpcost 18
@@ -754,11 +756,11 @@
 #copyspr 468
 #hp 45
 #size 4
-#prot 15
+#prot 12
 #mr 18
 #mor 30
 #str 16
-#att 13
+#att 12
 #def 15
 #prec 12
 #enc 2
@@ -789,16 +791,17 @@
 #str 10
 #att 15
 #def 13
-#prec 11
+#prec 12
 #enc 2
 #mapmove 16
 #ap 16
-#stealthy 0
 #magicskill 5 1
 #magicskill 6 1
 #weapon 6
 #weapon 17
-#armor 14
+#weapon 951
+#startitem 83
+#armor 13
 #darkvision 50
 #ambidextrous 3
 #okleader
@@ -862,7 +865,7 @@
 #armor 230
 #darkvision 100
 #darkpower 2
-#okleader
+#goodleader
 #warning 5
 #holy
 #female
@@ -879,7 +882,7 @@
 #copyspr 88
 #hp 35
 #size 3
-#prot 12
+#prot 15
 #mr 18
 #mor 30
 #str 16
@@ -892,7 +895,7 @@
 #demon
 #flying
 #assassin
-#stealthy 20
+#stealthy 25
 #patience 3
 #scalewalls
 #darkpower 2
@@ -995,16 +998,16 @@
 #newmonster 4031
 #fixedname "Vorn"
 #name "the Drider commander"
-#descr "Normally the transformation to being a drider destroys a portion of the victim's mind. Vorn was a powerful mage when he failed the test and has managed to retain more of his abilities than most."
+#descr "The transformation to being a Drider destroys a portion of the victim's mind. Vorn is an unusually large Drider who managed to retain more of his abilities than most. His greater awareness makes him more savage and cruel than the average Drider."
 #spr1 "drow_img/heavy_drider_1.tga"
 #spr2 "drow_img/heavy_drider_2.tga"
-#hp 20
+#hp 25
 #size 3
 #prot 3
 #mr 9
-#mor 12
-#str 12
-#att 11
+#mor 13
+#str 13
+#att 12
 #def 13
 #prec 10
 #enc 3
@@ -1016,13 +1019,83 @@
 #darkvision 100
 #ambidextrous 2
 #poisonres 15
-#berserk 2
+#berserk 3
 #mountedhumanoid
 #okleader
-#magicskill 5 1
-#magicskill 0 1
+#command 20
+#fear 5
 #insane 5
 #end
+
+#newmonster 4032
+#fixedname "Lilith"
+#name "Avatar of Lolth"
+#descr "Lolth has taken an earthly form to bend the Overworld to her will and ascend to greater godhood."
+#spr1 "drow_img/gold_priest_drow_1.tga"
+#spr2 "drow_img/gold_priest_drow_2.tga"
+#pathcost 10
+#startdom 1
+#gcost 100
+#hp 12
+#size 2
+#prot 0
+#mr 18
+#mor 20
+#str 9
+#att 12
+#def 10
+#prec 12
+#enc 3
+#mapmove 14
+#ap 14
+#weapon 238
+#armor 230
+#darkvision 100
+#darkpower 3
+#okleader
+#female
+#maxage 1000
+#poisonres 25
+#firstshape 4032
+#secondshape 899
+#magicskill 5 1
+#magicskill 7 1
+#end
+
+
+#newmonster 4033
+#fixedname "Orgoloth"
+#name "the Elementalist"
+#descr "Orgoloth is unusual for a Drow sorcerer in that he eschewed Death magic to focus on elemental magic. He has special talents for summoning elementals."
+#spr1 "drow_img/warlock_drow_1.tga"
+#spr2 "drow_img/warlock_drow_2.tga"
+#hp 9
+#size 2
+#prot 0
+#mr 14
+#mor 12
+#str 9
+#att 8
+#def 6
+#prec 10
+#enc 3
+#mapmove 14
+#ap 14
+#maxage 400
+#weapon 9
+#darkvision 50
+#poorleader
+#magicskill 0 2
+#magicskill 3 2
+#elementrange 1
+#batstartsum1 497
+#batstartsum1 595
+#end
+
+
+ 
+
+
 
 #newspell
 #copyspell 538
@@ -1048,7 +1121,7 @@
 #pathlevel 1 3
 #damage 4022
 #effect 10001
-#fatiguecost 4000
+#fatiguecost 4200
 #nreff 1002
 #restricted "Drow"
 #end
@@ -1062,7 +1135,7 @@
 #pathlevel 0 4
 #damage 4027
 #effect 10021
-#fatiguecost 4500
+#fatiguecost 3500
 #nreff 1
 #restricted "Drow"
 #end
@@ -1092,7 +1165,7 @@
 #path 0 7
 #pathlevel 0 6
 #path 1 5
-#pathlevel 1 6
+#pathlevel 1 3
 #damage 4030
 #effect 10021
 #fatiguecost 16600
@@ -1106,6 +1179,7 @@
 #path 5
 #rarity 5
 #gems 5 2
+#gems 3 1
 #gems 0 1
 #end
 
@@ -1113,7 +1187,7 @@
 #name "Temple of Pain"
 #path 8
 #rarity 5
-#gems 7 3
+#gems 7 2
 #homecom 4019 -- level 3 priest
 #end
 
@@ -1164,6 +1238,7 @@ Priests: Powerful"
 #hero3 4025 -- Illithid
 #hero4 4026 -- Level 4 priest
 #hero5 4031 --drider commander
+#hero6 4033 --elementalist sorcerer
 #homerealm 2
 #homerealm 10
 #addgod 157
@@ -1176,9 +1251,12 @@ Priests: Powerful"
 #addgod 607
 #addgod 2608
 #addgod 2801
+#addgod 4032
 #delgod 3082
 #delgod 2784
 #delgod 2785
+#delgod 265
+#delgod 266
 #fortera 2
 #templepic 0
 #aideathnation
