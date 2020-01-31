@@ -1077,7 +1077,6 @@
 #spr2 "drow_img/gold_priest_drow_2.tga"
 #pathcost 10
 #startdom 1
-#gcost 100
 #hp 12
 #size 2
 #prot 0
@@ -1110,6 +1109,7 @@
 #copystats 782
 #startdom 1
 #pathcost 10
+#gcost 130 --the gold cost needs to be set here for some reason
 #hp 21
 #shapechange 4035
 #magicboost 53 -2
