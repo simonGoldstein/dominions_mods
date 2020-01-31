@@ -693,7 +693,8 @@
 #newmonster 4020
 #name "Drow Assassin"
 #descr "We Own the Night"
-#copyspr 877
+#spr1 "drow_img/assassin_1.tga"
+#spr2 "drow_img/assassin_2.tga"
 #hp 10
 #size 2
 #prot 0
