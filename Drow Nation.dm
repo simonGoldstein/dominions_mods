@@ -751,6 +751,7 @@
 #rpcost 10010
 #end
 
+--summon
 #newmonster 4022
 #name "Myrlochar"
 #descr "The Myrlochar is a huge demon spider summoned from the Abyss to terrorize the enemies of Lolth."
@@ -778,6 +779,7 @@
 #weapon 63
 #end
 
+--hero
 #newmonster 4023
 #fixedname "Dritzz"
 #name "Renegade Drow"
@@ -796,12 +798,11 @@
 #enc 2
 #mapmove 16
 #ap 16
-#magicskill 5 1
-#magicskill 6 1
 #weapon 6
 #weapon 17
 #weapon 951
 #startitem 83
+#startitem 326
 #armor 13
 #darkvision 50
 #ambidextrous 3
@@ -810,6 +811,7 @@
 #heretic 2
 #end
 
+--hero
 #newmonster 4024
 #fixedname "Shahaerynus"
 #name "the Drow Sage"
@@ -836,6 +838,7 @@
 #researchbonus 15
 #end
 
+--hero
 #newmonster 4025
 #fixedname "Shamu"
 #copystats 445
@@ -844,6 +847,7 @@
 #batstartsum1d6 331
 #end
 
+--hero
 #newmonster 4026
 #fixedname "Malice"
 #name "the Grand Matron"
@@ -877,6 +881,7 @@
 #magicskill 7 3
 #end
 
+--summon
 #newmonster 4027
 #name "Greater Fiend of Darkness"
 #descr "This terrifying apparition is a feared assassin which walls cannot protect against."
@@ -907,6 +912,7 @@
 #noleader
 #end
 
+--summon
 #newmonster 4028
 #name "Carrion Crawler"
 #descr "An avid scavenger of the Underdark"
@@ -932,6 +938,7 @@
 #noleader
 #end
 
+--troop
 #newmonster 4029
 #name "Drow Shield Breakers"
 #descr "The Drow troop developed for fighting the more heavily armed human troops of the Overworld, especially those with shields."
@@ -959,6 +966,7 @@
 #rpcost 10000
 #end
 
+--summon
 #newmonster 4030
 #name "Apocalypse Demon"
 #descr "A terrifying manifestation of Lolth's wrath meant to bring total destruction to the Overworld."
@@ -994,8 +1002,9 @@
 #magicskill 0 4
 #weapon 957
 #weapon 146
-#end  
+#end
 
+--hero
 #newmonster 4031
 #fixedname "Vorn"
 #name "the Drider commander"
@@ -1028,42 +1037,8 @@
 #insane 5
 #end
 
-#newmonster 4032
-#fixedname "Lilith"
-#name "Avatar of Lolth"
-#descr "Lolth has taken an earthly form to bend the Overworld to her will and ascend to greater godhood."
-#spr1 "drow_img/gold_priest_drow_1.tga"
-#spr2 "drow_img/gold_priest_drow_2.tga"
-#pathcost 10
-#startdom 1
-#gcost 100
-#hp 12
-#size 2
-#prot 0
-#mr 18
-#mor 20
-#str 9
-#att 12
-#def 10
-#prec 12
-#enc 3
-#mapmove 14
-#ap 14
-#weapon 238
-#armor 230
-#darkvision 100
-#darkpower 3
-#okleader
-#female
-#maxage 1000
-#poisonres 25
-#firstshape 4032
-#secondshape 899
-#magicskill 5 1
-#magicskill 7 1
-#end
 
-
+--hero
 #newmonster 4033
 #fixedname "Orgoloth"
 #name "the Elementalist"
@@ -1093,9 +1068,52 @@
 #batstartsum1 595
 #end
 
+--pretender
+#newmonster 4035
+#fixedname "Lilith"
+#name "Avatar of Lolth"
+#descr "Lolth has taken an earthly form to bend the Overworld to her will and ascend to greater godhood."
+#spr1 "drow_img/gold_priest_drow_1.tga"
+#spr2 "drow_img/gold_priest_drow_2.tga"
+#pathcost 10
+#startdom 1
+#gcost 100
+#hp 12
+#size 2
+#prot 0
+#mr 18
+#mor 20
+#str 9
+#att 12
+#def 10
+#prec 12
+#enc 3
+#mapmove 14
+#ap 14
+#weapon 238
+#armor 230
+#darkvision 100
+#darkpower 3
+#okleader
+#female
+#maxage 1000
+#poisonres 25
+--#firstshape 4032
+--#secondshape 899
+#shapechange 4036
+#magicskill 5 1
+#magicskill 7 1
+#end
 
- 
-
+#newmonster 4036
+#copyspr 782
+#copystats 782
+#startdom 1
+#pathcost 10
+#hp 21
+#shapechange 4035
+#magicboost 53 -2
+#end
 
 
 #newspell
@@ -1252,7 +1270,7 @@ Priests: Powerful"
 #addgod 607
 #addgod 2608
 #addgod 2801
-#addgod 4032
+#addgod 4035 --the national god
 #delgod 3082
 #delgod 2784
 #delgod 2785
