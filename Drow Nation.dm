@@ -17,7 +17,7 @@
 #sound 13
 #range 12
 #ammo 1
-#rcost 2
+#rcost 1
 #pierce
 #armorpiercing
 #bowstr
@@ -34,7 +34,7 @@
 #sound 13
 #range 30
 #ammo 12
-#rcost 4
+#rcost 3
 #pierce
 #armorpiercing
 #bowstr
@@ -236,7 +236,7 @@
 #mapmove 14
 #ap 14
 #weapon 6
-#weapon 6
+#weapon 9
 #weapon 950
 #armor 8
 #darkvision 50
@@ -329,7 +329,7 @@
 #undisciplined
 #gcost 28
 #rcost 1
-#rpcost 10000
+#rpcost 35
 #end
 
 #newmonster 4008
@@ -357,7 +357,7 @@
 #female
 #holy
 #bodyguard 2
-#gcost 25
+#gcost 35
 #rcost 1
 #rpcost 25
 #end
@@ -369,7 +369,7 @@
 #spr2 "drow_img/ettercap_2.tga"
 #hp 45
 #size 3
-#prot 8
+#prot 10
 #mr 9
 #mor 14
 #str 18
@@ -499,7 +499,6 @@
 #armor 13
 #darkvision 50
 #ambidextrous 2
-#female
 #goodleader
 #gcost 10012
 #rcost 1
@@ -555,7 +554,7 @@
 #poorleader
 #magicskill 5 2
 #custommagic 1152 100
-#custommagic 1152 10
+#custommagic 1152 15
 #gcost 10012
 #rcost 1
 #rpcost 2
@@ -712,6 +711,7 @@
 #patience 3
 #darkvision 50
 #ambidextrous 2
+#female
 #noleader
 #weapon 956
 #weapon 126
@@ -931,7 +931,6 @@
 #mapmove 20
 #ap 16
 #darkvision 100
-#magicbeing
 #animal
 #weapon 955
 #weapon 20
@@ -941,16 +940,16 @@
 --troop
 #newmonster 4029
 #name "Drow Shield Breakers"
-#descr "The Drow troop developed for fighting the more heavily armed human troops of the Overworld, especially those with shields."
+#descr "This Drow unit was developed for fighting the more heavily armed human troops of the Overworld, especially those with shields."
 #spr1 "drow_img/drow_shieldbreaker_1.tga"
 #hp 10
 #size 2
 #prot 0
 #mr 12
-#mor 11
+#mor 12
 #str 9
 #att 11
-#def 10
+#def 11
 #prec 10
 #enc 3
 #mapmove 14
@@ -961,9 +960,9 @@
 #armor 20
 #darkvision 50
 #ambidextrous 2
-#gcost 12
+#gcost 15
 #rcost 1
-#rpcost 10000
+#rpcost 15
 #end
 
 --summon
@@ -1116,6 +1115,54 @@
 #end
 
 
+
+--summoned monster
+#newmonster 4037
+#name "Xorn"
+#descr "Xorn are native to the elemental plane of Earth. They can be lured to the Prime Material Plane for short terms of service in return for precious gems and metals."
+#copyspr 2215
+#singlebattle
+#hp 55
+#size 3
+#prot 18
+#mr 12
+#mor 14
+#str 16
+#att 12
+#def 12
+#prec 9
+#enc 2
+#mapmove 16
+#ap 16
+#eyes 3
+#weapon 29
+#weapon 29
+#weapon 29
+#weapon 20
+#magicbeing
+#stonebeing
+#troglodyte
+#blink
+#moutainsurvival
+#maxage 1000
+#fireres 5
+#coldres 5
+#shockres 5
+#poisonres 15
+#darkpower 1
+#darkvision 100
+#siegebonus 25
+#neednoteat
+#gold -20
+#noleader
+#poormagicleader
+#onebattlespell "Blink"
+#end
+
+
+
+
+
 #newspell
 #copyspell 538
 #name "Darkfire"
@@ -1191,6 +1238,20 @@
 #nreff 1
 #restricted "Drow"
 #end 
+
+#newspell
+#name "Summon Xorn"
+#descr "This spell summons a Xorn from the Earth elemental plane to perform a brief service in return for gems and precious metals."
+#school 0
+#researchlevel 5
+#path 0 3
+#pathlevel 0 3
+#damage 4037
+#effect 10021
+#fatiguecost 800
+#nreff 1
+#restricted "Drow"
+#end
 
 
 #newsite
