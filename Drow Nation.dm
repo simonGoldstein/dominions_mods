@@ -1120,7 +1120,8 @@
 #newmonster 4037
 #name "Xorn"
 #descr "Xorn are native to the elemental plane of Earth. They can be lured to the Prime Material Plane for short terms of service in return for precious gems and metals."
-#copyspr 2215
+#spr1 "drow_img/xorn_1.tga"
+#spr2 "drow_img/xorn_2.tga"
 #singlebattle
 #hp 55
 #size 3
