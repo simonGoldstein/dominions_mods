@@ -110,7 +110,6 @@
 #att 11
 #def 9
 #prec 9
-#holy
 #magicbeing
 #flying
 #darkvision 100
@@ -146,7 +145,7 @@
 #popkill 2
 #magicskill 4 1
 #magicskill 3 1
-#researchbonus 5
+#researchbonus 6
 #poorleader
 #poormagicleader
 #weapon 29
@@ -212,67 +211,7 @@
 #weapon 904
 #end
 
-#newmonster 3074
-#copyspr 996
-#name "Shuggoth"
-#descr "This dread abomination is the product of the perverted magic utilized by the followers of R'yleh."
-#hp 56
-#size 4
-#prot 6
-#mr 15
-#mor 30
-#str 15
-#att 10
-#def 6
-#prec 8
-#enc 0
-#mapmove 1
-#ap 8
-#eyes 4
-#weapon 85
-#weapon 85
-#weapon 62
-#weapon 20
-#holy
-#magicbeing
-#bluntres
-#darkvision 100
-#trample
-#trampswallow
-#incorporate
-#end
-
-#newmonster 3705
-#name "Dark Young"
-#descr "These hideous creatures are the servants of Shub-Niggurath and are often summoned by her followers to carry out her will.  Their appetite for human blood is insatiable."
-#spr1 "images/Dark_Young_1.tga"
-#spr2 "images/Dark_Young_2.tga"
-#ap 8
-#mapmove 1
-#hp 90
-#prot 8
-#size 6
-#str 17
-#enc 0
-#att 10
-#def 8
-#prec 5
-#mr 15
-#mor 30
-#eyes 5
-#holy
-#magicbeing
-#darkvision 100
-#slimer 2
-#maxage 1000
-#weapon 20
-#weapon 271
-#weapon 271
-#weapon 271
-#noitem
-#gcost 0
-#end
-
+--monsters 3704 and 3705 are unused
 
 #newmonster 3706
 #name "Magma Beast"
@@ -452,33 +391,67 @@
 #end
 
 #newmonster 3712
-#copystats 1412
-#copyspr 1412
-#name "Quetzl"
-#descr "The Quetzl is considered a sacred spirit manifestation of the Mictlan forest.  It has been blesssed by the Moon God with limited intelligence and night vision, making it an excellent hunter and guardian.  Priest Kings will often ask Nahuli to summon them to guard their fotresses. A Quetzl is said to drive away evil spirits."
-#hp 25
-#prot 2
-#size 3
+#name "Dark Young"
+#descr "These hideous creatures are the servants of Shub-Niggurath and are often summoned by her followers to carry out her will.  Their appetite for human blood is insatiable."
+#spr1 "images/Dark_Young_1.tga"
+#spr2 "images/Dark_Young_2.tga"
+#ap 14
+#mapmove 1
+#hp 90
+#prot 8
+#size 6
+#str 17
+#enc 0
+#att 12
+#def 8
+#prec 5
+#mr 15
+#mor 30
+#eyes 5
+#holy
+#magicbeing
+#darkvision 100
+#slimer 2
+#maxage 1000
+#weapon 271
+#weapon 271
+#weapon 271
+#weapon 271
+#noitem
+#gcost 0
+#end
+
+#newmonster 3713
+#copyspr 996
+#name "Shuggoth"
+#descr "This dread abomination is the product of perverted nature magic utilized by the Elder Things."
+#hp 76
+#size 6
+#prot 8
+#mr 15
+#mor 30
 #str 15
 #att 12
-#mr 14
-#mor 12
-#clearspec
+#def 9
+#prec 8
+#enc 0
+#mapmove 1
+#ap 8
+#pooramphibian
+#trample
+#eyes 4
+#weapon 85
+#weapon 85
+#weapon 62
+#weapon 20
 #holy
-#ethereal
 #magicbeing
-#flying
-#forestsurvival
-#poisonres 100
-#darkvision 50
-#neednoteat
-#patrolbonus 10
-#noleader
-#poormagicleader
-#incunrest -10
-#itemslots 12416
-#clearweapons
-#weapon 239
+#bluntres
+#darkvision 100
+#trampswallow
+#incorporate
+#noitem
+#gcost 0
 #end
 
 
@@ -506,22 +479,6 @@
 #provrange 4
 #fatiguecost 800
 #nreff 8
-#end
-
-#newspell
-#name "Lure Vile Things"
-#descr "The caster touches the Void and summons forth a pair of Vile Things."
-#school 0
-#researchlevel 2
-#path 0 4
-#pathlevel 0 1
-#damage 757
-#effect 10001
-#fatiguecost 500
-#nreff 2
-#restricted 37
-#restricted 74
-#restricted 107
 #end
 
 #newspell
@@ -560,43 +517,39 @@
 
 #newspell
 #name "Breed Dark Young"
-#descr "With this spell, a cultist of Shub-Nuggurath may summon a fearsome Dark Young to feast on the blood of her enemies."
+#descr "With the use of perverted fertility rites, the mage brings forth an abominable Dark Young."
 #school 6
 #researchlevel 5
 #path 0 7
 #pathlevel 0 2
 #path 1 6
 #pathlevel 1 2
-#damage 3705
-#effect 10001
-#fatiguecost 2500
+#damage 3712
+#fatiguecost 3500
+#effect 10021
 #nreff 1
-#restricted 37
+#resticted 37
 #restricted 74
 #restricted 107
 #end
 
 #newspell
-#name "Create Shuggoth"
-#descr "By means of this perverted magic a cultist of R'yleh creates a Shuggoth to serve the Great Old Ones."
+#name "Summon Shoggoth"
+#descr "The mage summons a dread Shuggoth to do his bidding."
 #school 6
 #researchlevel 6
 #path 0 7
 #pathlevel 0 2
 #path 1 4
 #pathlevel 1 2
-#damage 3074
-#effect 10001
+#damage 3713
+#effect 10021
 #fatiguecost 6600
 #nreff 1
-#restricted 37
+#resticted 37
 #restricted 74
 #restricted 107
 #end
-
-
-
-
 
 #newspell 
 #name "Summon Giant Python"
@@ -610,27 +563,9 @@
 #effect 10001
 #nreff 1
 #restricted 12
-#restricted 51
+#resticted 51
 #onlygeosrc 32
 #end
-
-#newspell
-#name "Summon Quetzl"
-#descr "The shaman summons a Quetzl from the Mictlan forest to protect the people of the realm."
-#school 0
-#researchlevel 3
-#path 0 6
-#path 1 4
-#pathlevel 0 1
-#pathlevel 1 1
-#damage 3712
-#effect 10021
-#fatiguecost 1200
-#nreff 1
-#restricted 12
-#restricted 51
-#end
-
 
 #newspell
 #name "Call Spiders"
