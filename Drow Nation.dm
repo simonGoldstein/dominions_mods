@@ -16,7 +16,7 @@
 #att 1
 #sound 13
 #range 12
-#ammo 1
+#ammo 2
 #rcost 1
 #pierce
 #armorpiercing
@@ -43,15 +43,15 @@
 #end
 
 #newweapon 952
-#name "Whip of Vipers"
-#dmg 0
-#nratt 3
-#att 0
+#name "Flail of Vipers"
+#dmg 4
+#nratt 1
+#att 1
+#def -2
 #len 4
 #sound 9
 #rcost 5
 #magic
-#dt_cap
 #secondaryeffect 51
 #unrepel
 #flail
@@ -236,7 +236,7 @@
 #mapmove 14
 #ap 14
 #weapon 6
-#weapon 9
+#weapon 6
 #weapon 950
 #armor 8
 #darkvision 50
@@ -306,7 +306,7 @@
 #descr "Those who fail the test of Lolth suffer this terrible fate."
 #spr1 "drow_img/heavy_drider_1.tga"
 #spr2 "drow_img/heavy_drider_2.tga"
-#hp 20
+#hp 24
 #size 3
 #prot 3
 #mr 9
@@ -329,7 +329,7 @@
 #undisciplined
 #gcost 28
 #rcost 1
-#rpcost 35
+#rpcost 30
 #end
 
 #newmonster 4008
@@ -344,7 +344,7 @@
 #mor 15
 #str 9
 #att 12
-#def 10
+#def 12
 #prec 10
 #enc 3
 #mapmove 14
@@ -356,6 +356,7 @@
 #ambidextrous 2
 #female
 #holy
+#poisonres 5
 #bodyguard 2
 #gcost 35
 #rcost 1
@@ -369,24 +370,26 @@
 #spr2 "drow_img/ettercap_2.tga"
 #hp 45
 #size 3
-#prot 10
-#mr 9
+#prot 8
+#mr 12
 #mor 14
 #str 18
 #att 12
-#def 9
+#def 10
 #prec 11
 #enc 2
 #mapmove 18
 #ap 16
 #holy
+#magicbeing
+#heal
 #weapon 33
 #weapon 239
 #weapon 261
 #darkvision 100
 #eyes 8
 #poisonres 15
-#gcost 65
+#gcost 50	
 #rcost 2
 #rpcost 35
 #end
@@ -554,8 +557,8 @@
 #poorleader
 #magicskill 5 2
 #custommagic 1152 100
-#custommagic 1152 15
-#gcost 10012
+#custommagic 1152 10
+#gcost 125
 #rcost 1
 #rpcost 2
 #end
@@ -585,6 +588,7 @@
 #female
 #poisonres 5
 #magicskill 8 1
+#armor 6
 #gcost 75
 #rcost 1
 #rpcost 2
@@ -675,11 +679,13 @@
 #darkvision 100
 #darkpower 1
 #okleader
+#poormagicleader
 #warning 3
 #holy
 #female
 #maxage 500
 #poisonres 15
+#deathcurse
 #magicskill 8 3
 #magicskill 5 3
 #magicskill 7 2
@@ -879,6 +885,7 @@
 #magicskill 8 4
 #magicskill 5 3
 #magicskill 7 3
+#magicskill 4 1
 #end
 
 --summon
@@ -1060,7 +1067,7 @@
 #weapon 9
 #darkvision 50
 #poorleader
-#magicskill 0 2
+#magicskill 0 3
 #magicskill 3 2
 #elementrange 1
 #batstartsum1 497
@@ -1350,7 +1357,7 @@ Priests: Powerful"
 #startscout 4011
 #startunittype1 4004
 #startunitnbrs1 15
-#startunittype2 4003
+#startunittype2 4006
 #startunitnbrs2 15
 #defcom1 4012
 #defcom2 4016
