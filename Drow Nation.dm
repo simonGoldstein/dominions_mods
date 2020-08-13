@@ -16,7 +16,7 @@
 #att 1
 #sound 13
 #range 12
-#ammo 2
+#ammo 1
 #rcost 1
 #pierce
 #armorpiercing
@@ -370,19 +370,20 @@
 #spr2 "drow_img/ettercap_2.tga"
 #hp 45
 #size 3
-#prot 8
-#mr 12
-#mor 14
+#prot 9
+#mr 16
+#mor 15
 #str 18
-#att 12
+#att 13
 #def 10
 #prec 11
 #enc 2
 #mapmove 18
 #ap 16
 #holy
+#forestsurvival
 #magicbeing
-#heal
+#woundfend 1
 #weapon 33
 #weapon 239
 #weapon 261
@@ -391,7 +392,7 @@
 #poisonres 15
 #gcost 50	
 #rcost 2
-#rpcost 35
+#rpcost 45
 #end
 
 #newmonster 4010
@@ -529,7 +530,7 @@
 #darkvision 50
 #poorleader
 #custommagic 5248 100
-#gcost 55
+#gcost 45
 #rcost 1
 #rpcost 2
 #end
@@ -589,7 +590,7 @@
 #poisonres 5
 #magicskill 8 1
 #armor 6
-#gcost 75
+#gcost 65
 #rcost 1
 #rpcost 2
 #end
@@ -620,7 +621,7 @@
 #magicskill 8 1
 #magicskill 7 1
 #douse 1
-#gcost 95
+#gcost 75
 #rcost 1
 #rpcost 2
 #end
@@ -652,7 +653,7 @@
 #magicskill 8 2
 #magicskill 5 1
 #magicskill 7 1
-#gcost 150
+#gcost 120
 #rcost 1
 #rpcost 2
 #end
@@ -851,6 +852,7 @@
 #copyspr 445
 #descr "An uneasy alliance at best."
 #batstartsum1d6 331
+#gcost 0
 #end
 
 --hero
@@ -879,6 +881,7 @@
 #goodleader
 #warning 5
 #holy
+#deathcurse
 #female
 #maxage 600
 #poisonres 20
