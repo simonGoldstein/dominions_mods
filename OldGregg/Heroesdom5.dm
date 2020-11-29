@@ -82,7 +82,7 @@
 #pooramphibian
 #maxage 500
 #incunrest 50
-#popkill 5
+#popkill 3
 #spreaddom 1
 #clearmagic
 #magicskill 4 2
@@ -165,8 +165,8 @@
 #newmonster 3507
 #copystats 2361
 #copyspr 2361
-#fixedname "Kayla the Debauched"
-#descr "Kayla the Debauched is a long time worshipper of Shub-Nuggurath and has been granted the ability to summon a Dark Young once per month by sacrificing humans in an obscene fertility ritual. With the rise of R'yleh, she senses the chance to further the cause of all the Outer Gods, and she has come to offer her services to further this end."
+#fixedname "Valaria the Debauched"
+#descr "Valaria the Debauched is a long time worshipper of Shub-Nuggurath and has been granted the ability to summon a Dark Young once per month by sacrificing humans in an obscene fertility ritual. With the rise of R'yleh, she senses the chance to further the cause of all the Outer Gods, and she has come to offer her services to further this end."
 #holy
 #insane 20
 #popkill 2

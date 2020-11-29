@@ -14,7 +14,7 @@
 #clearweapons
 #weapon 12
 #cleararmor
-#armor  5
+#armor  254
 #armor 20
 #armor 2
 #incunrest -1
@@ -29,13 +29,14 @@
 #name "Mercenary Warlock"
 #descr "Mercenaty Warlocks from Abysia eschew research in Astral magic and concentrate instead on Blood and Fire magic more suitable to use in combat. Their insatiable need for human sacrifice to satisfy their demon benefactors makes them unpopular with the common people, whom they regard as mere cannon fodder to serve their desire for power."
 #clearmagic
+#clearspec
 #magicskill 0 2
 #magicskill 7 2
 #incunrest 20
 #startage 21
 #maxage 80
 #popkill 2
-#deathfire 4
+#deathfire 5
 #pillagebonus 5
 #end
 
@@ -43,10 +44,7 @@
 #copystats 2263
 #copyspr 2263
 #name "Cartographer"
-#descr "The Cartographer is an explorer whose mission is to boldly go where no one has gone before. His five year mission is to seek out new civilizations and plot their utter destruction. To accomplish this mission, he has been given a good sailing ship and a band of trusty pirates to carry out his explorations. The Cartographer is often surrounded by admiring naked women who are in awe of his mapmaking skills."
-#clearmagic
-#magicskill 1 2
-#magicskill 2 1
+#descr "The Cartographer is an explorer whose mission is to boldly go where no one has gone before. His five year mission is to seek out new civilizations and plot their utter destruction. To accomplish this mission, he has been given a good sailing ship and a band of trusty warriors to carry out his explorations. The Cartographer is often surrounded by admiring naked women who are in awe of his mapmaking skills."
 #summon1 "Maenad"
 #end
 
@@ -89,32 +87,76 @@
 #end
 
 #newmonster 3604
-#copystats 1873
-#copyspr 1873
-#name "the Blasphemer"
-#descr "The Blasphemer is a priest who reviles all other religions other than his own. He will, however, provide potent blesses if the price is right."
+#copyspr 85
+#name "Merciless"
+#descr "The Merciless are female Abyssian mages feared for their utterly ruthless desire to conquer and crush all before them. It is rumored that one of these mages is the mother of Benji, the Mercenary Warlock. If so, it proves that the apple does not fall far from the tree."
 #clearmagic
-#magicskill 8 2
-#clearspec
-#holy
-#heretic 2
-#deathfire 5
+#hp 10
+#size 2
+#prot 0
+#mr 14
+#mor 13
+#str 10
+#att 11
+#def 9
+#prec 10
+#enc 2
+#mapmove 14
+#ap 12
+#weapon 256
+#maxage 115
+#female
+#magicskill 4 2
+#magicskill 7 2
+#fear 5
+#pillagebonus 5
+#beastmaster 1
+#okleader
 #end
 
 #newmonster 3605
-#copystats 349
-#copyspr 349
-#name "the Merciless"
-#descr "Sages attribute this woman to be the mother of Benji, the mercenary warlock. The apple does not fall far from the tree."
+#copystats 241
+#copyspr 241
+#name "Blasphemer"
+#descr "Blasphemers are dedicated to the overthrow of all religions. They worship something named Science and this is thought to be the source of their powers. Wherever they roam, faith will decrease and unrest or sabotage will increase. Woe to any who seek to kill a Blasphemer, for they definitely go out with a bang and not a whimper."
+#clearspec
 #clearmagic
-#magicskill 0 2
-#magicskill 7 2
-#fear 5
-#beastmaster 1
-#okleader
-#maxage 90
-#item "Fire in a Jar" 
+#stealthy 10
+#spy
+#heretic 3
+#incunrest 30
+#fortkill 5
+#noleader
+#deathfire 25
 #end
+
+#newmonster 3606
+#copystats 280
+#copyspr 280
+#name "Renegade Mason"
+#descr "In the highly sexist realm of Ulm there is no room for a woman to possess engineering skills. Undeterred, Kayla the Renegade Mason, secretly learned her craft and then departed Ulm to use her skills elsewhere."
+#clearmagic
+#mason
+#castledef 10
+#siegebonus 10
+#magiccommand 5
+#end
+
+#newmonster 3607
+#copystats 151
+#copyspr 151
+#name "Bewildered"
+#descr "A lost soul trying to find her way in the world."
+#clearspec
+#clearmagic
+#stealthy 10
+#seduce 10
+#insanify 10
+#shatteredsoul 10
+#neednoteat
+#end
+
+
 
 
 #newmerc
@@ -137,10 +179,10 @@
 #bossname "Benji"
 #com "Mercenary Warlock"
 #unit "Devil"
-#nrunits 15
+#nrunits 10
 #level 1
 #minmen 5
-#minpay 180
+#minpay 200
 #xp 5
 #randequip 1
 #recrate 100
@@ -156,7 +198,7 @@
 #nrunits 30
 #level 0
 #minmen 10
-#minpay 155
+#minpay 135
 #xp 5
 #randequip 1
 #recrate 200
@@ -171,36 +213,58 @@
 #nrunits 25
 #level 2
 #minmen 10
-#minpay 100
+#minpay 125
 #xp 1
 #recrate 200
-#eramask 3
-#end
-
-#newmerc
-#name "Micah, the Blasphemer"
-#bossname "Micah"
-#com "the Blasphemer"
-#level 0
-#minpay 125
-#xp 5
-#eramask 3
+#eramask 7
 #end
 
 #newmerc
 #name "Arti, the Merciless"
 #bossname "Arti"
-#com "the Merciless"
+#com "Merciless"
 #unit "Salamander"
-#nrunits 20
-#level 0
-#minmen 10
-#minpay 150
-#xp 1
-#recrate 200
-#eramask 3
+#nrunits 8
+#level 1
+#minmen 4
+#minpay 175
+#xp 5
+#randeqip 1
+#recrate 100
+#eramask 7
 #end
 
+#newmerc
+#name "Micah, the Blasphemer"
+#bossname "Micah"
+#com "Blasphemer"
+#level 0
+#minpay 75
+#xp 5
+#item "Winged Shoes"
+#eramask 6
+#end
 
+#newmerc
+#name "Kayla, the Renegade Mason"
+#bossname "Kayla"
+#com "Renegade Mason"
+#unit "Clockwork Soldier"
+#nrunits 5
+#level 3
+#minpay 250
+#minmen 1
+#xp 5
+#recrate 100
+#eramask 6
+#end
 
-
+#newmerc
+#name "Kit, the Bewildered"
+#bossname "Kit"
+#com "Bewildered"
+#level 2
+#minpay 50
+#xp 5
+#eramask 3
+#end
